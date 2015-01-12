@@ -8,8 +8,11 @@
      $(".Carrot").css("color", "blue"); 
      $(".Rabbit").css("color","gold"); 
      $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe); 
-     $('#1').bind('click', alertButtonClick);
-     $('#2').bind('click', "Are you late?");
+     $('#1').bind('click', alertButtonClick); 
+     $('#2').bind('click', replaceWHtml); 
+     $('#2').bind('click', replaceWText); 
+     $('#cat').bind('click', addAPara); 
+     $('#cat').bind('click', addAPara);
  });
 
 function mouseOverMe() {
@@ -22,8 +25,12 @@ function mouseOutMe(){
  
 function alertButtonClick(){
     alert("Welcome");
+}  
+ 
+function replaceWHtml(){
+    $('#dog').html('<h6>And I would walk 5oo more</h6>');
 } 
  
-function Are you late?() {
-    
+function replaceWText(){
+    $('#dog').text('<h6>And I would walk 5oo more</h6>');
 }

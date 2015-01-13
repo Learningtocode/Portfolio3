@@ -11,8 +11,10 @@
      $('#1').bind('click', alertButtonClick); 
      $('#2').bind('click', replaceWHtml); 
      $('#2').bind('click', replaceWText); 
-     $('#cat').bind('click', addAPara); 
-     $('#cat').bind('click', addAPara);
+     $('#ham').bind('click', addAPara); 
+     $('#cat').bind('click', removeAPara); 
+     $('#hidelogo').bind('click', hideTheImage);
+     $('#showlogo').bind('click', showTheImage);
  });
 
 function mouseOverMe() {
@@ -34,3 +36,15 @@ function replaceWHtml(){
 function replaceWText(){
     $('#dog').text('<h6>And I would walk 5oo more</h6>');
 }
+ 
+function addAPara(){
+    $('#cat').append('<p>Just to be the man</p>');
+} 
+ 
+function removeAPara(){
+    $('#cat').remove();
+} 
+ 
+ function hideTheImage(){
+     $('#logo').hide('puff', {}, 2500);
+ }

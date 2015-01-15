@@ -2,9 +2,11 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
- */ 
+ */  
+
  
  $("document").ready(function() { 
+     $('#superHuman').accordion({header: "h4"});
      $(".Carrot").css("color", "blue"); 
      $(".Rabbit").css("color","gold"); 
      $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe); 
@@ -14,7 +16,8 @@
      $('#ham').bind('click', addAPara); 
      $('#cat').bind('click', removeAPara); 
      $('#hidelogo').bind('click', hideTheImage);
-     $('#showlogo').bind('click', showTheImage);
+     $('#showlogo').bind('click', showTheImage); 
+     
  });
 
 function mouseOverMe() {

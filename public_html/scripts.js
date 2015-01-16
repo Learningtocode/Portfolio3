@@ -3,7 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */  
-
+/*video#bgvid {
+            position: fixed; right: 0; bottom: 0;
+            min-width: 100%; min-height: 100%;
+            width: auto; height: auto; z-index: -100;
+            background: url(polina.jpg) no-repeat;
+            background-size: cover;
+              }*/
  
  $("document").ready(function() { 
      $('#superHuman').accordion({header: "h4"});
@@ -16,8 +22,13 @@
      $('#ham').bind('click', addAPara); 
      $('#cat').bind('click', removeAPara); 
      $('#hidelogo').bind('click', hideTheImage);
-     $('#showlogo').bind('click', showTheImage); 
-     
+     $('#showlogo').bind('click', showTheImage);   
+     $('#back').videoBG({
+		position:"fixed",
+		zIndex:-1,
+		opacity:0.5
+	});
+
  });
 
 function mouseOverMe() {

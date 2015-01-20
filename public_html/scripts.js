@@ -23,12 +23,22 @@
      $('#cat').bind('click', removeAPara); 
      $('#hidelogo').bind('click', hideTheImage);
      $('#showlogo').bind('click', showTheImage);   
-     $('#back').videoBG({
+    /* $('#back').videoBG({
 		position:"fixed",
 		zIndex:-1,
 		opacity:0.5
-	});
-
+	});*/ 
+   /* $("a[rel=example_group]").fancybox({
+        'transitionIn': 'elastic', //elastic, fade, or none 
+        'transitionOut': 'elastic',
+        'titlePosition': 'over', // outside, inside or over 
+        'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+        return '<span id="fancybox-title-over">Image '+v (currentIndex + 1) + '/' 
+        + currentArray.length + (title.length ? '&nbsp; ' + title : '') + '</spam>';
+        } 
+    }); */
+    // setup ul.tabs to work as tabs for each div directly under div.panes
+ // $("ul.tabs").tabs("div.panes > div");
  });
 
 function mouseOverMe() {
